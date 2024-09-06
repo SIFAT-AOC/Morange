@@ -439,6 +439,11 @@ img {
 
 /* collection Tab end */
 
+/* product section start */
+.product-section {
+  margin: 50px 0;
+}
+/* product section end */
 /* collection end */
 @media (max-width: 768px) {
   .carousel-caption {
@@ -459,14 +464,18 @@ img {
   .carousel-caption .custom-hero-btn {
     font-size: 14px;
   }
-  .collectionTab .nav-pills .nav-link {
-    font-size: 13px;
-  }
+
   .view-all {
     position: sticky;
   }
   .hero-slide .carousel-inner > .carousel-item img {
     aspect-ratio: 16/15;
     object-fit: cover;
+  }
+  .collection-boder .nav-pills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
