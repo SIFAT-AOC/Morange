@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #f87c56;
+  --secondary-dark: #7f7f8a;
+  --dark: #000;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.announceMent-section {
+  background-color: #7f7f8a1f;
+  color: var(--dark);
+  padding: 10px 0;
+}
+.announceMent-section marquee {
+  display: block;
+}
+.dashed-text {
+}
+.announceMent {
+}
+.dashed-text p {
+  margin: 0 40px 0 0;
+  color: var(--dark);
+  font-size: 12px;
+  font-weight: 450;
+}
+.dashed-text span {
+  width: 20px;
+  height: 1px;
+  background-color: var(--dark);
+  display: block;
+}
+
+/* NAVBAR STYLE START */
+.navbar {
+  background-color: var(--white);
+}
+.navbar-brand img {
+  width: 160px;
+}
+.nav-item a {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--dark) !important;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.nav-item a:hover {
+  color: var(--primary-color) !important;
+}
+.nav-item .active {
+  color: var(--primary-color) !important;
+}
+.btn {
+  border: none !important;
+}
+.btn:active {
+  border: none !important;
+}
+.iconbox .btn:hover svg path {
+  fill: var(--primary-color);
+}
+/* NAVBAR STYLE  END*/
+
+/* banner section start */
+
+.hero-slide .carousel-inner > .carousel-item img {
+  aspect-ratio: 16/8;
+  object-fit: cover;
+}
+.overlay {
+  position: relative;
+}
+.overlay::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.43478641456582634) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.carousel-caption {
+}
+.carousel-caption p {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0;
+}
+.carousel-caption h5 {
+  font-size: 120px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 115px;
+}
+
+.carousel-caption .custom-hero-btn {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  border: 1px solid;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+.carousel-caption .custom-hero-btn:hover {
+  background-color: var(--white);
+  color: var(--dark);
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 50%;
+  left: 15%;
+  right: auto;
+  transform: translateY(50%);
+  width: 500px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+.custom-hero-btn:hover svg path {
+  stroke: var(--dark);
+}
+/* banner section end */
+
+/* <!-- brand logo section start --> */
+
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand-logo img {
+  height: 30px;
+}
+
+/* <!-- brand logo section end --> */
+
+/* collection start */
+
+/* collection start */
+.collection img {
+  filter: grayscale(2);
+}
+.collection:hover img {
+  filter: grayscale(0);
+}
+.collection {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.collection a {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.collection a svg {
+  transform: translate(0);
+  transition: transform 0.4s ease-in-out;
+}
+.collection a:hover {
+  color: #fff;
+}
+.collection:hover a svg {
+  transform: translate(43px);
+}
+.featured-collection {
+  height: 100%;
+  width: 100%;
+}
+
+.featured-collection .feature-box {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  z-index: 1;
+}
+.featured-collection a svg path {
+  stroke: var(--primary-color);
+}
+.featured-collection img {
+  filter: grayscale(0) !important;
+  height: 100%;
+  aspect-ratio: 15/10;
+  object-fit: cover;
+}
+.featured-collection a {
+  width: auto;
+  background-color: var(--white);
+  color: var(--primary-color);
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.featured-collection a:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+.featured-collection a:hover svg path {
+  stroke: var(--white);
+}
+.feature-box h5 {
+  font-size: 32px;
+  color: var(--white);
+  margin-bottom: 26px;
+}
+.featured-collection::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6250875350140056) 0%,
+    rgba(0, 0, 0, 0.5102415966386555) 100%
+  );
+  transition: all 0.4s ease;
+}
+.featured-collection:hover::after {
+  background: none;
+}
+/* collection end */
+
+/* collection Tab start */
+
+.collectionTab {
+  margin: 50px 0;
+}
+.collection-boder {
+  border-top: 2px solid #d7d4d4;
+  border-bottom: 2px solid #d7d4d4;
+  padding: 30px 0 50px 0;
+}
+.collectionTab .nav-pills .nav-link {
+  background-color: #fff;
+  color: #767677;
+  font-size: 16px;
+}
+.collectionTab .nav-pills .nav-link.active {
+  border-bottom: 2px solid var(--dark);
+  border-radius: 0;
+  color: var(--dark) !important;
+}
+.view-all {
+  position: absolute;
+  top: 5px;
+  font-size: 13px;
+  right: 5px;
+  color: var(--dark);
+  font-weight: 300;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.view-all:hover {
+  color: var(--primary-color);
+}
+.view-all:hover svg path {
+  stroke: var(--primary-color);
+}
+.view-all svg {
+  margin-left: 3px;
+  height: 12px;
+  width: 12px;
+}
+.multi-collection {
+  background-color: var(--white);
+  color: var(--dark);
+  position: absolute;
+  bottom: 0%;
+  padding: 10px;
+}
+.multi-collection img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.multi-collection h5 {
+  font-size: 12px;
+  color: var(--dark);
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.collection-card .wishlist-icon {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.collection-card .carousel-control-next-icon {
+  background-image: url("../image/arrow-right.png");
+}
+.collection-card .carousel-control-prev-icon {
+  background-image: url("../image/arrow-left.png");
+}
+.collection-card .carousel-control-next-icon,
+.collection-card .carousel-control-prev-icon {
+  width: 15px;
+  height: 15px;
+}
+#variant-color {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  position: relative;
+  margin: 20px 0 0 0;
+}
+#variant-color button {
+  height: 20px;
+  width: 20px;
+  opacity: 1;
+  border: 2px solid #fff !important;
+}
+
+#variant-color button[variant-color-type="red"] {
+  background-color: #f87c56 !important;
+}
+#variant-color button[variant-color-type="dark"] {
+  background-color: var(--dark) !important;
+}
+#variant-color button[variant-color-type="gray"] {
+  background-color: var(--secondary-dark) !important;
+}
+#variant-color button[variant-color-type="red"]:hover,
+#variant-color button[variant-color-type="red"]:focus,
+#variant-color button[variant-color-type="red"].active {
+  box-shadow: 0 0 0 2px #f87c56 !important;
+}
+#variant-color button[variant-color-type="dark"]:hover,
+#variant-color button[variant-color-type="dark"]:focus,
+#variant-color button[variant-color-type="dark"].active {
+  box-shadow: 0 0 0 2px var(--dark) !important;
+}
+#variant-color button[variant-color-type="gray"]:hover,
+#variant-color button[variant-color-type="gray"]:focus,
+#variant-color button[variant-color-type="gray"].active {
+  box-shadow: 0 0 0 2px var(--secondary-dark) !important;
+}
+
+.collection-card .carousel-indicators {
+  margin-right: 0;
+  margin-bottom: 1rem;
+  margin-left: 0;
+}
+.collection-card .about-product h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 15px 0 10px 0;
+}
+.collection-card .about-product .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection-card .about-product p {
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.collection-card .about-product span {
+  font-size: 13px;
+  font-weight: 500;
+}
+.variant-size {
+  margin-top: 15px;
+}
+.variant-size button {
+  flex: 1;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  border-right: 0;
+  color: var(--secondary-dark);
+  background-color: var(--white);
+  padding: 6px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.variant-size button:last-child {
+  border-right: 1px solid #d9d9d9;
+}
+.variant-size button:hover,
+.variant-size button:focus {
+  background-color: var(--primary-color);
+  padding: 6px 8px;
+  color: var(--white);
+}
+
+/* collection Tab end */
+
+/* collection end */
+@media (max-width: 768px) {
+  .carousel-caption {
+    position: absolute;
+    bottom: 50%;
+    left: 15%;
+    right: auto;
+    transform: translateY(50%);
+    width: 70%;
+  }
+  .carousel-caption p {
+    font-size: 16px;
+  }
+  .carousel-caption h5 {
+    font-size: 35px;
+    line-height: 36px;
+  }
+  .carousel-caption .custom-hero-btn {
+    font-size: 12px;
+  }
+  .collectionTab .nav-pills .nav-link {
+    font-size: 10px;
+  }
+}
