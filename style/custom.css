@@ -162,16 +162,24 @@ img {
 /* collection start */
 
 /* collection start */
+
+.collection {
+  position: relative;
+  height: 400px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
 .collection img {
   filter: grayscale(2);
+  object-fit: cover;
+
+  transition: all 0.5s ease;
 }
 .collection:hover img {
   filter: grayscale(0);
-}
-.collection {
-  position: relative;
-  cursor: pointer;
-  transition: all 0.5s ease;
+
+  transform: scale(1.2);
 }
 .collection a {
   position: absolute;
@@ -184,6 +192,7 @@ img {
   padding: 0 20px;
   text-decoration: none;
   color: #fff;
+  text-transform: uppercase;
 }
 .collection a svg {
   transform: translate(0);
@@ -196,8 +205,11 @@ img {
   transform: translate(43px);
 }
 .featured-collection {
-  height: 100%;
+  height: 401px;
   width: 100%;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .featured-collection .feature-box {
@@ -212,9 +224,13 @@ img {
 }
 .featured-collection img {
   filter: grayscale(0) !important;
-  height: 100%;
-  aspect-ratio: 15/10;
+  height: 100% !important;
   object-fit: cover;
+  display: block;
+  transition: all 0.5s ease;
+}
+.featured-collection:hover img {
+  transform: scale(1.2);
 }
 .featured-collection a {
   width: auto;
@@ -305,9 +321,9 @@ img {
   padding: 10px;
 }
 .multi-collection img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 .multi-collection h5 {
   font-size: 12px;
@@ -437,13 +453,20 @@ img {
     font-size: 16px;
   }
   .carousel-caption h5 {
-    font-size: 35px;
-    line-height: 36px;
+    font-size: 45px;
+    line-height: 48px;
   }
   .carousel-caption .custom-hero-btn {
-    font-size: 12px;
+    font-size: 14px;
   }
   .collectionTab .nav-pills .nav-link {
-    font-size: 10px;
+    font-size: 13px;
+  }
+  .view-all {
+    position: sticky;
+  }
+  .hero-slide .carousel-inner > .carousel-item img {
+    aspect-ratio: 16/15;
+    object-fit: cover;
   }
 }
