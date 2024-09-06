@@ -440,10 +440,45 @@ img {
 /* collection Tab end */
 
 /* product section start */
+.book-look,
 .product-section {
   margin: 50px 0;
 }
 /* product section end */
+/* book look start */
+
+.book-look .featured-collection {
+  height: 100%;
+  width: 100%;
+}
+.book-look .featured-collection .feature-box {
+  bottom: 50%;
+  left: 10%;
+  transform: translate(-10%, 50%);
+}
+.book-look .feature-box h5 {
+  margin-bottom: 14px;
+  font-size: 50px;
+  color: var(--white);
+  font-weight: 400;
+}
+.book-look .feature-box span {
+  font-size: 13px;
+  color: var(--white);
+}
+.book-look .featured-collection a {
+  width: auto;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.book-look .featured-collection a svg path {
+  stroke: var(--white);
+}
+/* book look end */
+
 /* collection end */
 @media (max-width: 768px) {
   .carousel-caption {
