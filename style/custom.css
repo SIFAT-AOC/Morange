@@ -441,8 +441,12 @@ img {
 
 /* product section start */
 .book-look,
-.product-section {
-  margin: 50px 0;
+.product-section,
+.new-arrible,
+.our-service,
+.insta-gellary,
+.footer-menu {
+  margin: 60px 0;
 }
 /* product section end */
 /* book look start */
@@ -453,14 +457,15 @@ img {
 }
 .book-look .featured-collection .feature-box {
   bottom: 50%;
-  left: 10%;
-  transform: translate(-10%, 50%);
+  left: 18%;
+  transform: translate(-18%, 50%);
 }
 .book-look .feature-box h5 {
   margin-bottom: 14px;
   font-size: 50px;
   color: var(--white);
   font-weight: 400;
+  width: 90%;
 }
 .book-look .feature-box span {
   font-size: 13px;
@@ -479,6 +484,190 @@ img {
 }
 /* book look end */
 
+/* new arriaval section start */
+.arrival-content {
+}
+.arrival-content span {
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.arrival-content h4 {
+  font-size: 50px;
+  line-height: 55px;
+  width: 61%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.arrival-content p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+  color: var(--secondary-dark);
+}
+.arrival-content a {
+}
+.arrival-content .arrival-btn {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  background-color: #141b4d;
+  padding: 10px 14px;
+  margin-top: 0;
+  display: inline-block;
+}
+/* new arriaval section end */
+
+/* our service start */
+.our-service .serviceBox {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.our-service .serviceBox svg {
+  height: 30px;
+  width: 30px;
+}
+.our-service .serviceBox h3 {
+  font-size: 17px;
+  margin: 10px 0px 5px 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.our-service .serviceBox p {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--secondary-dark);
+}
+/* our service end */
+
+/* insta image gellary start */
+.insta-btn {
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  padding: 15px 30px;
+  background-color: var(--white);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 17px;
+  font-weight: 500;
+  gap: 7px;
+  transition: all 0.4s ease;
+}
+.insta-btn:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+.insta-btn img {
+  height: 22px;
+  width: 22px;
+}
+.insta-btn:hover img {
+  filter: brightness(200%);
+}
+
+/* insta image gellary end */
+
+/* footer start */
+
+.footer-header {
+}
+.footer-header h3 {
+  font-size: 18px;
+  color: #212529;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.footer-header p {
+  font-size: 14px;
+  color: var(--secondary-dark);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 90%;
+}
+.footer-header form {
+  background-color: #7f7f8a26;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 2px 2px 4px 20px;
+}
+.footer-header form input[type="text"] {
+  border: 0;
+  background-color: transparent;
+}
+.footer-header form input[type="text"]:focus-visible {
+  border: 0;
+  padding: 0;
+  outline: none;
+}
+.footer-header form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 0;
+  padding: 12px 25px;
+  box-shadow: -2px 3px 0px 0px #000;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+.footer-header form button:hover {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+.footer-header .social-link {
+  margin: 20px 0 0 0;
+  gap: 10px;
+}
+
+.footer-content-menu h4 {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+.footer-content-menu ul {
+  gap: 10px;
+}
+.footer-content-menu ul li {
+  transition: all 0.4s ease-in-out;
+}
+.footer-content-menu ul li a {
+  text-decoration: none;
+  color: var(--secondary-dark);
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: all 0.4s ease-in-out;
+}
+.footer-content-menu ul li:hover a,
+.footer-content-menu ul li:hover {
+  transform: translateY(5px);
+  color: var(--primary-color);
+}
+.copy-right {
+  border-top: 2px solid #7f7f8a26;
+}
+.copy-right p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.copy-right p span {
+  font-weight: 500;
+}
+/* footer end */
 /* collection end */
 @media (max-width: 768px) {
   .carousel-caption {
@@ -512,5 +701,81 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .book-look .featured-collection .feature-box {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .book-look .feature-box h5 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 36px;
+  }
+  .arrival-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrival-content span {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .arrival-content h4 {
+    font-size: 35px;
+    line-height: 40px;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+  }
+  .arrival-content p {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: var(--secondary-dark);
+    text-align: center;
+  }
+  .book-look,
+  .product-section,
+  .new-arrible,
+  .our-service {
+    margin: 50px 0;
+  }
+  .navbar-toggler svg {
+    height: 25px;
+    width: 25px;
+  }
+  .navbar-toggler {
+    border: 1px solid transparent;
+    padding: 5px 10px;
+  }
+  .navbar-toggler:focus {
+    border: 1px solid var(--primary-color);
+  }
+  .navbar-toggler svg path {
+    fill: var(--primary-color);
+  }
+  .our-service .serviceBox {
+    align-items: center;
+  }
+  .insta-img-box .cover-img {
+    height: 150px;
+    object-fit: cover;
+  }
+  .footer-content-menu,
+  .footer-header {
+    padding: 15px 0;
+  }
+  .navbar-brand img {
+    width: 120px;
+  }
+  .our-service .serviceBox h3 {
+    text-align: center;
+  }
+  .our-service .serviceBox p {
+    text-align: center;
   }
 }
