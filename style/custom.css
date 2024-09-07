@@ -655,7 +655,7 @@ img {
 }
 .footer-content-menu ul li:hover a,
 .footer-content-menu ul li:hover {
-  transform: translateY(5px);
+  transform: translateY(-5px);
   color: var(--primary-color);
 }
 .copy-right {
