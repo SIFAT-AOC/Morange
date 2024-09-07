@@ -778,4 +778,12 @@ img {
   .our-service .serviceBox p {
     text-align: center;
   }
+  .footer-header form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 11px;
+  }
 }
