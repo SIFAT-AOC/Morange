@@ -605,8 +605,11 @@ img {
   padding: 2px 2px 4px 20px;
 }
 .footer-header form input[type="text"] {
+  padding: 0 61px 0 0;
   border: 0;
   background-color: transparent;
+  font-size: 13px;
+  color: #7f7f8a;
 }
 .footer-header form input[type="text"]:focus-visible {
   border: 0;
@@ -782,8 +785,13 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 11px;
+    padding: 25px 15px;
+    gap: 20px;
+  }
+  .footer-header form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 0;
+    padding: 9px 9px;
   }
 }
